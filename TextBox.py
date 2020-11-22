@@ -3,16 +3,19 @@ import tkinter as tk
 def text_box():
     root = tk.Tk()
     root.title("Begin Your Stock Story")
-
-    tk.Label(root, text = "Provide us a story: ").grid(row = 0)
-
-    input = tk.Entry(root, width = 100)
-    input.grid(row = 0, column = 1)
+    root.geometry("640x640")
 
 
-    tk.Button(root,
+    input = tk.Text(root,width=40,height=20)
+    input.pack(pady=20)
+
+
+    button_frame = tk.Frame(root)
+    button_frame.pack()
+    
+    tk.Button(button_frame,
               text = 'Enter',
               command = root.quit).grid(row = 3,
                                         column = 1)
     root.mainloop()
-    return input.get()
+    return input.get(1.0,tk.END)

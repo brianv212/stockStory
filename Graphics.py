@@ -22,6 +22,7 @@ def loadImage(image,screen):
 
 def loadSound(sound):
     pygame.mixer.music.load(sound)
+    pygame.mixer.music.set_volume(0.1)
     pygame.mixer.music.play()
     while (pygame.mixer.music.get_busy() == True):
         continue
@@ -36,11 +37,11 @@ def createStory(images,sounds):
     for image,sound in zip(picture_files,audio_files):
         loadImage(image,screen)
         loadSound(sound)
-    time.sleep(3)
+    time.sleep(1)
     pygame.quit()
 
 def make_directory(self) -> os.path :
-    dir = f"C:{os.environ['HOMEPATH']}\\Desktop\\StockImages"
+    dir = f"{os.getcwd()}\\StockImages"
     if not os.path.exists(dir):
         os.mkdir(dir)
         #print("\nThe directory has been created")

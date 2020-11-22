@@ -25,7 +25,7 @@ class TextToSpeech:
 
     def _make_directory(self) -> os.path :
         #C:\Users\jiali\Desktop
-        dir = f"C:{os.environ['HOMEPATH']}\\Desktop\\StockStory"
+        dir = f"{os.getcwd()}\\StockStory"
         if not os.path.exists(dir):
             os.mkdir(dir)
             #print("\nThe directory has been created")
@@ -40,5 +40,4 @@ class TextToSpeech:
         return dir
 
 if __name__ == '__main__':
-    a = TextToSpeech("What the fuck did you just fucking say about me, you little bitch? I’ll have you know I graduated top of my class in the Navy Seals, and I’ve been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills.")
     a.text_to_speech()
