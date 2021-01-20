@@ -9,3 +9,8 @@ This was made at Hack@UCI (February 2020). My teammates and I were fresh out of 
 everything we've learned so far in our coding careers to make a simple program. For three people with limited knowledge and one weekend,
 we were impressed with our own abilities and it definitely was an experience we learned from. Going further we all hope to expand our
 growing interest in the broad realm of computer science.
+
+# Contributors
+Jhungia
+brianv212
+KodyKhuu
