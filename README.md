@@ -11,6 +11,6 @@ we were impressed with our own abilities and it definitely was an experience we 
 growing interest in the broad realm of computer science.
 
 # Contributors
-Jhungia\n
-brianv212\n
+Jhungia, 
+brianv212, 
 KodyKhuu
